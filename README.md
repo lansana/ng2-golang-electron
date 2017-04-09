@@ -10,14 +10,14 @@ To clone the repository, run the following command:
 
 ## Overview
 
-The entire app is housed in the `client` directory. If the structure does not suit your needs,
-feel free to move anything around. Make sure you correct any related paths in code/config files when doing so.
+If the structure does not suit your needs, feel free to move anything around. 
+Make sure you correct any related paths in code/config files when doing so.
 
 ### Electron
 
-`client/electron.js` is your entry point for electron.
+`electron.js` is your entry point for electron.
 
-The `renderer.js` function provided in the default Electron app is located at `client/src/assets/js/renderer.js`.
+The `renderer.js` function provided in the default Electron app is located at `src/assets/js/renderer.js`.
 
 That function has the following code, which the application if will be discussed in the Angular2 section:
 
@@ -56,14 +56,14 @@ as the tests and app module. Included is a custom `shared` module, which contain
 
 Before you start coding, there are a couple of things you should do.
 
-1. Go to `client/package.json` and update the build script to point to the correct path. This is necessary
+1. Go to `package.json` and update the build script to point to the correct path. This is necessary
 in order for your assets to load properly when running `ng build`.
 
 For example, my directory was located at `C:/Projects/Go/src/ng2-golang-electron`, so I set the path to the
 `dist` directory that would be built by the angular-cli when running `ng build`. You should update it to your 
 respective path.
 
-2. Update `client/.env` to reflect the local server and port you will be developing on. 
+2. Update `.env` to reflect the local server and port you will be developing on. 
 
 That should be all the pre-config.
 
